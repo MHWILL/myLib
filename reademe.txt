@@ -25,4 +25,5 @@
 tips: 这只是模拟jquery的原理机制，但并不是jquery的原理机制实现（技术有限/(ㄒoㄒ)/~~）
       jquery中 加载事件走的事件队列，而这里我用的addEventListener/attachMent
       在window上绑定load事件。还有很多不足。但用来自己开发还算顺手。哈哈^_^。
+      后续将继续添加一些常用的方法。
      
