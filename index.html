@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+       #div1{width: 100px;height: 100px;background: red;
+             filter: alpha(opacity=30);opacity: 0.3;
+             position: absolute;
+       }
+    </style>
+    <script src="jun.js"></script>
+    <script src="jun_animate.js"></script>
+    <script src="jun_drag.js"></script>
+    <script>
+        $(function(){
+           $('#btn').toggle(function(){
+               $('#div1').animate({width:'200',height:'200',opacity:100});
+           },function(){
+               $('#div1').animate({width:100,height:100,opacity:30})
+           });
+           $('#div1').drag();
+        })
+    </script>
+</head>
+<body>
+   <input type="button" value="move" id="btn">
+   <div id="div1"></div>
+</body>
+</html>
